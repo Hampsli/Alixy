@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(curl -s http://localhost:4000/health)",
+      "Bash(curl -s http://localhost:4000/achievements)",
+      "Bash(NEXT_PUBLIC_API_URL=http://localhost:4000 npm run dev)",
+      "Bash(curl -fsS http://localhost:3000/login -o /tmp/login.html)",
+      "Read(//tmp/**)",
+      "Bash(grep -o \"Bienvenida de vuelta\\\\|ALIXY\\\\|Tu narrativa de liderazgo\" /tmp/login.html | sort -u && echo \"---errors in dev log---\" && grep -E \"error|Error|ERROR\" /private/tmp/claude-501/-Users-law-Documents-Projects-Alixy/43be457c-2b60-472a-a02d-7c404340385f/tasks/bq11vgm3e.output | head -20)",
+      "Read(//private/tmp/**)",
+      "Bash(curl -fsS http://localhost:3000/ -o /tmp/home.html)",
+      "Bash(curl -fsS http://localhost:3000/dashboard -o /tmp/dashboard.html)",
+      "Bash(curl -fsS http://localhost:3000/bitacora -o /tmp/bitacora.html)",
+      "Bash(curl -fsS http://localhost:3000/carpeta -o /tmp/carpeta.html)",
+      "Bash(curl -fsS http://localhost:3000/dossier -o /tmp/dossier.html)",
+      "Bash(curl -s -X POST http://localhost:4000/auth/login -H \"Content-Type: application/json\" -d '{\"email\":\"test@test.com\",\"password\":\"x\"}')",
+      "Bash(curl -s -X POST http://localhost:4000/achievements -H \"Content-Type: application/json\" -d '{\"title\":\"test\",\"description\":\"y\",\"type\":\"strategic\",\"date\":\"2026-05-08\",\"status\":\"raw\",\"evidences\":[]}')",
+      "Bash(curl -s http://localhost:4000/network/curators)",
+      "Bash(docker --version)",
+      "Bash(docker compose *)",
+      "Bash(docker info *)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"node src/server.js\")",
+      "Bash(ls -la /Users/law/Documents/Projects/Alixy/.npmrc /Users/law/Documents/Projects/Alixy/alixy-backend/.npmrc 2>&1; echo \"---\"; ls -la /Users/law/.npmrc 2>&1)",
+      "Read(//Users/law/**)",
+      "Bash(curl -fsS http://localhost:3001/login -o /tmp/login_docker.html)",
+      "Bash(curl -fsS http://localhost:4000/health)",
+      "Bash(curl -fsS http://localhost:3001/dashboard -o /tmp/dash_docker.html)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

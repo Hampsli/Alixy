@@ -84,8 +84,11 @@ export default function SettingsPage() {
               <Input label="Rol actual" defaultValue={user?.role} />
 
               <div className="flex flex-col gap-1.5">
-                <label className="text-sm font-medium">Bio profesional</label>
+                <label htmlFor="settings-bio" className="text-sm font-medium">
+                  Bio profesional
+                </label>
                 <textarea
+                  id="settings-bio"
                   className="flex min-h-24 w-full rounded-lg border border-border bg-background px-4 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring resize-none"
                   placeholder="Cuéntanos sobre ti..."
                   defaultValue="Senior Software Engineer con 7 años de experiencia en desarrollo web full-stack. Apasionada por la arquitectura de sistemas y el liderazgo técnico."
@@ -201,16 +204,16 @@ export default function SettingsPage() {
               </CardHeader>
               <CardContent className="space-y-3">
                 <Button variant="secondary" className="w-full justify-start">
-                  📖 Guía de inicio rápido
+                  Guía de inicio rápido
                 </Button>
                 <Button variant="secondary" className="w-full justify-start">
-                  ❓ Preguntas frecuentes (FAQ)
+                  Preguntas frecuentes (FAQ)
                 </Button>
                 <Button variant="secondary" className="w-full justify-start">
-                  🎥 Video tutoriales
+                  Video tutoriales
                 </Button>
                 <Button variant="secondary" className="w-full justify-start">
-                  💬 Contactar soporte
+                  Contactar soporte
                 </Button>
               </CardContent>
             </Card>
@@ -233,11 +236,11 @@ function SettingSwitch({
   title,
   description,
   defaultChecked,
-}: {
+}: Readonly<{
   title: string;
   description: string;
   defaultChecked?: boolean;
-}) {
+}>) {
   return (
     <div className="flex items-center justify-between py-3 border-b border-border last:border-0">
       <div className="flex-1">

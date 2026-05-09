@@ -48,21 +48,18 @@ export const organizations = [
     name: 'Women in Tech México',
     description: 'Comunidad que conecta, visibiliza y potencia a mujeres en tecnología',
     tags: ['Networking', 'Eventos', 'Mentoría'],
-    logo: '🌟',
   },
   {
     id: '2',
     name: 'Tech Ladies',
     description: 'Red global de mujeres en tech con oportunidades de empleo y comunidad',
     tags: ['Empleo', 'Comunidad', 'Recursos'],
-    logo: '💼',
   },
   {
     id: '3',
     name: 'Laboratoria',
     description: 'Organización que transforma vidas de mujeres a través de la educación en tech',
     tags: ['Educación', 'Empleo', 'Mentoría'],
-    logo: '🚀',
   },
 ];
 
@@ -81,7 +78,7 @@ export const curators = [
     name: 'Ana Martínez',
     specialty: 'Negociación salarial y promociones',
     rate: '$75 USD / sesión',
-    rating: 5.0,
+    rating: 5,
     reviews: 32,
     avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400',
   },

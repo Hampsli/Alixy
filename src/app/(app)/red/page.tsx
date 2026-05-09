@@ -14,7 +14,6 @@ interface Organization {
   name: string;
   description: string;
   tags: string[];
-  logo: string;
 }
 interface Curator {
   id: string;
@@ -82,7 +81,6 @@ export default function RedPage() {
             {organizations.map((org) => (
               <Card key={org.id}>
                 <div className="flex items-start gap-4">
-                  <div className="text-4xl">{org.logo}</div>
                   <div className="flex-1">
                     <h3 className="font-semibold mb-1">{org.name}</h3>
                     <p className="text-sm text-muted-foreground mb-3">{org.description}</p>

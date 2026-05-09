@@ -127,8 +127,7 @@ Backend:
 - Tipografía: Lora (headings), Plus Jakarta Sans (body), JetBrains Mono (code) — desde Google Fonts.
 - Componentes propios sobre Radix UI primitives (`@radix-ui/react-{avatar,slot,tabs,switch}`) + iconos `lucide-react` + `tw-animate-css`.
 
-## Notas para agentes
+## Troubleshooting
 
-- Próximamente: ver [AGENTS.md](AGENTS.md). Esta es **Next.js 16** — leer `node_modules/next/dist/docs/` antes de tocar APIs (App Router, `next/navigation`, etc.).
-- No hay `react-router`, no hay `useNavigate`, no hay Vite. Migración hecha en este repo desde una versión Vite previa.
 - Si Docker falla con `npm error E401` en el build, es por el registry privado heredado del `~/.npmrc` global. Los lockfiles de este repo se regeneraron contra `https://registry.npmjs.org/` y hay un `.npmrc` por proyecto que lo fija — no commitees lockfiles regenerados con el registry privado.
+- Si `:3000` está ocupado (por ejemplo un SSH tunnel), el frontend en Docker queda en `:3001`. Liberá el puerto o ajustá `docker-compose.yml`.
